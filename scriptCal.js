@@ -59,12 +59,12 @@ function calculateLove() {
 			if(loverName.toLowerCase() == "ankita") {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
-					"<br>It's a <i>Dilwae Dulhaniya Le Jayenge</i> Jodi";
+					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";
 					result.innerHTML = finalResult + specScore + "% Lover";
 				}
 				else {
 					comment.innerHTML = "WoW It's a" +
-					"<br><i>Rab Ne Bana Jodi</i>" + "<br>Perfect Couple";
+					"<br><i>Rab Ne Bana Di Jodi</i>" + "<br>Perfect Couple";
 					result.innerHTML = finalResult + specScore + "% Lover";
 				}
 			}
@@ -87,12 +87,12 @@ function calculateLove() {
 			if(yourName.toLowerCase() == "ankita") {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
-					"<br>It's a <i>Dilwae Dulhaniya Le Jayenge</i> Jodi";
+					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";
 					result.innerHTML = finalResult + specScore + "% Lover";
 				}
 				else {
 					comment.innerHTML = "WoW It's a" +
-					"<br><i>Rab Ne Bana Jodi</i>" + "<br>Perfect Couple";
+					"<br><i>Rab Ne Bana Di Jodi</i>" + "<br>Perfect Couple";
 					result.innerHTML = finalResult + specScore + "% Lover";
 				}
 			}

@@ -56,7 +56,7 @@ function calculateLove() {
 		let y = Math.floor(Math.random() * 5);
 		shayari.innerHTML = specShayari[y];
 		if(yourName.toLowerCase() == "jamil") {
-			if(loverName.toLowerCase() == "ankita") {
+			if(loverName.toLowerCase() == "anyone") {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
 					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";
@@ -84,7 +84,7 @@ function calculateLove() {
 			
 		}
 		else if(loverName.toLowerCase() == "jamil") {
-			if(yourName.toLowerCase() == "ankita") {
+			if(yourName.toLowerCase() == "anyone") {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
 					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";

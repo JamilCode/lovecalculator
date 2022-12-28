@@ -1,7 +1,7 @@
 function calculateLove() {
 	let yourName = document.getElementById("Yname").value;
 	let loverName = document.getElementById("Lname").value;
-	let loveScore = Math.floor(Math.random() * (80-50)) + 50;
+	let loveScore = Math.floor(Math.random() * (70-30)) + 30;
 	let result = document.getElementById("result");
 	let finalResult = yourName + " and " + loverName + " are ";
 	let comment = document.getElementById("comment");
@@ -38,11 +38,11 @@ function calculateLove() {
 	
 	function diffComment() {
 		let x =  Math.floor(Math.random() * 5);
-		if(loveScore <= 60) {
+		if(loveScore <= 50) {
 			comment.innerHTML = "I think you deserve someone better than " + loverName +
 			"<br>It's a <i>Kabhi Khushi Kabhie Gham</i> Jodi";
 		}
-		else if(loveScore <= 70) {
+		else if(loveScore <= 60) {
 			comment.innerHTML = "Not that bad. But extra effort is required before propose";
 		}
 		else {
@@ -54,9 +54,10 @@ function calculateLove() {
 	function specFun() {
 		let specScore = Math.floor(Math.random()*(100-91)) + 90;
 		let y = Math.floor(Math.random() * 5);
+		let specName = ["hemi", "sumi", "sumu", "maya", "chokina"];
 		shayari.innerHTML = specShayari[y];
 		if(yourName.toLowerCase() == "jamil") {
-			if(loverName.toLowerCase() == "anyone") {
+			if(specName.includes(loverName.toLowerCase())) {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
 					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";
@@ -84,7 +85,7 @@ function calculateLove() {
 			
 		}
 		else if(loverName.toLowerCase() == "jamil") {
-			if(yourName.toLowerCase() == "anyone") {
+			if(specName.includes(yourName.toLowerCase())) {
 				if(specScore <= 95) {
 					comment.innerHTML = "You both are made for each other" +
 					"<br>It's a <i>Dilwale Dulhaniya Le Jayenge</i> Jodi";

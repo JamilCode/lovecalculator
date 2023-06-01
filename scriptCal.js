@@ -54,7 +54,7 @@ function calculateLove() {
 	function specFun() {
 		let specScore = Math.floor(Math.random()*(100-91)) + 90;
 		let y = Math.floor(Math.random() * 5);
-		let specName = ["hemi", "sumi", "sumu", "maya", "chokina"];
+		let specName = ["hemi", "sumi", "sumu", "maya", "chokina", "sahin"];
 		shayari.innerHTML = specShayari[y];
 		if(yourName.toLowerCase() == "jamil") {
 			if(specName.includes(loverName.toLowerCase())) {
